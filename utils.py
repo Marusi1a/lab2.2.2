@@ -17,3 +17,10 @@ def simple(n):
             return False
         i += 6
     return True
+
+def is_power_of_five(number):
+    if number <= 0:
+        return False
+    while number % 5 == 0:
+        number /= 5
+    return number == 1
